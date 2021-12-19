@@ -43,14 +43,12 @@ Made With 💕 By @Tellybots_4u
         InlineKeyboardButton('❔ Help', callback_data='help')
         ]]
     )
-    HELP_BUTTONS = InlineKeyboardMarkup(
-        [[
+    HELP_BUTTONS = [[
         InlineKeyboardButton('👲 About', callback_data='about'),
         InlineKeyboardButton('🏡 Home', callback_data='home')
         ]]
     )
-    ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
+    ABOUT_BUTTONS = [[
         InlineKeyboardButton('❔ Help', callback_data='help'),
         InlineKeyboardButton('🏡 Home', callback_data='home')
         ]]
