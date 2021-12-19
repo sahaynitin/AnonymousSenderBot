@@ -15,15 +15,15 @@ async def _calls(anonbot, callback_query):
             chat_id=chat_id,
             message_id=message_id,
             text=Data.START.format(callback_query.from_user.mention, mention),
-            reply_markup=InlineKeyboardMarkup(Data.buttons),
+            reply_markup=InlineKeyboardMarkup(Data.START_BUTTONS),
         )
     if callback_query.data.lower() == "about":
         await anonbot.edit_message_text(
             chat_id=chat_id,
             message_id=message_id,
-            text=Data.ABOUT,
+            text=Data.ABOUT_TEXT,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(Data.home_button),
+            reply_markup=InlineKeyboardMarkup(Data.ABOUT_BUTTONS),
         )
     if callback_query.data.lower() == "remove":
         caption = ""
