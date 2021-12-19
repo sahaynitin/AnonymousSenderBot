@@ -47,12 +47,12 @@ Made With 💕 By @Tellybots_4u
         InlineKeyboardButton('👲 About', callback_data='about'),
         InlineKeyboardButton('🏡 Home', callback_data='home')
         ]]
-    )
+   
     ABOUT_BUTTONS = [[
         InlineKeyboardButton('❔ Help', callback_data='help'),
         InlineKeyboardButton('🏡 Home', callback_data='home')
         ]]
-    )
+   
 
     # Home Button
     home_button = [[InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]]
