@@ -9,8 +9,18 @@ if ENVIRONMENT:
         raise Exception("Your API_ID is not a valid integer.")
     API_HASH = os.environ.get('API_HASH', None)
     BOT_TOKEN = os.environ.get('BOT_TOKEN', None)
+
+    MUST_JOIN = os.environ.get('MUST_JOIN', None)
+    if MUST_JOIN.startswith("@"):
+        MUST_JOIN = MUST_JOIN.replace("@", "")
 else:
     # Fill the Values
     API_ID = 0
     API_HASH = ""
     BOT_TOKEN = ""
+    MUST_JOIN = "StarkBots"
+    if MUST_JOIN.startswith("@"):
+        MUST_JOIN = MUST_JOIN[1:]
+
+DEVS = [1909265212]
+
