@@ -8,9 +8,9 @@ class Data(object):
     START_TEXT = """
 Hey {} 
 
-I am Telegram Most Powerful Subtitle Muxer Bot
+I am Anonymous Sender Bot
 
-I can Mux Any Srt or Txt File in File or Video
+I can help you to remove caption and Tags by hiding your Username
 
 Use Help Command to Know How to Use me
 
@@ -18,21 +18,15 @@ Made With 💕 By @Tellybots_4u
 """
     HELP_TEXT = """
 Recommended
-➠ Use Hardmux If You Have More Time
+➠ Just Send Anythings To Get Started
 
 Recommended
-➠ Use Softmux To add Subtitle Fastly in It
-
-Softmux
-➠ Send /softmux to add Subtitle Softly in it
-
-HardMux
-➠ Send /hardmux to add Subtitle hardly in it 
+➠ If You Want To Delete Caption Click on Remove Caption Button
 
 Made With 💕 By @Tellybots_4u
 """
     ABOUT_TEXT = """
- **🤖 Bot :** Sub-Muxer\n
+ **🤖 Bot :** Anonymous Sender\n
  **👲 Developer :** [Tellybots_4u](https://telegram.me/tellybots_4u)\n
  **👥 Channel :** [Tellybots_4u](https://telegram.me/tellybots_4u)\n
  **❄️ Credits :** Everyone in this journey\n
@@ -47,21 +41,19 @@ Made With 💕 By @Tellybots_4u
         InlineKeyboardButton('💬 Support Group', url='https://telegram.me/tellybots_support')
         ],[
         InlineKeyboardButton('❔ Help', callback_data='help'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('⛔ Close', callback_data='remove')
         ]]
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
         InlineKeyboardButton('👲 About', callback_data='about'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('🏡 Home', callback_data='home')
         ]]
     )
     ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🏡 Home', callback_data='home'),
         InlineKeyboardButton('❔ Help', callback_data='help'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('🏡 Home', callback_data='home')
         ]]
     )
 
