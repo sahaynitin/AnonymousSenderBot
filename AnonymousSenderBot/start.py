@@ -1,8 +1,4 @@
 import os
-if bool(os.environ.get("WEBHOOK", False)):
-    from Config import Config
-else:
-    from Config import Config
 from Data import Data
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
